@@ -1,0 +1,28 @@
+Hello!
+
+This is Web-based Object-Oriented PHP implementation of famous Conway's "Game of Life" concept.
+
+Scripts require at least PHP 5.4 version and GD library.
+
+I believe code is self explained so I added only few comments
+and general descriptions for each class explaining basic concepts. 
+
+Unit tests are based on PHPUnit framework included in phpunit.phar file. 
+Test are based on 2 crucial classes - ConwayRules and Universe, 
+the rest are based on these or are very basic 
+so i don't believe its necessary to write unit tests for them.
+
+For GIF animation i used 3rd party class found on stackoverflow.com
+
+User-experience:
+User comes to index.php, he can choose between 2 universes: 
+first randomly generated and second predefined (Gosper's Glider Gun).
+After click on one of these, user is redirected to another page, 
+that includes newly-generated GIF image. Universe of the game is borderless
+but due to GIF limitations image displays only "window" between location (0,0) and (37,37). 
+Image displays first 300 iterations of life-cycle.
+
+Feel free to comment my work - all feedback are welcome!
+
+PS. Code is also available on my github: 
+https://github.com/marcinbojanowski/GameOfLife
