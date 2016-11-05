@@ -1,4 +1,4 @@
-/bin/sh
+#!/bin/sh
 
 # run phpunit in /var/www dir 
 docker exec -it gameoflife sh -c 'cd /var/www/;  phpunit'
