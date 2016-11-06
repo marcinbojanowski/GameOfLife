@@ -1,0 +1,13 @@
+<phpunit bootstrap="../../app/bootstrap.php" colors="true" verbose="true">
+    <testsuites>
+        <testsuite name="Game of Life Tests">
+          <directory suffix="Test.php">.</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
+</phpunit>
